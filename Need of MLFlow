@@ -1,0 +1,39 @@
+Why Do we need MLFlow?
+-->
+     Data --> split --> Feature Engineering
+                |               |
+              size            Encoding  
+          Random State       Imputations
+            stratify          Scaling  
+
+
+Metric               Loss
+hiw mddel is     Tells us the error
+performing       minimize the error
+it's for the     this is for the datascientist 
+stakeholders     who knows the depth of the model
+
+
+Experiment Tracking in MlLOps
+--> It is the process of recording all the details of ML expriemets.This includes configuration,code version,
+datasets,metrics and results.
+
+Why it's used in MLOps?
+-->1.Reproducibility
+Ensures exp can be repeated with the same settings, helping to verify results
+2.Comparison
+Make it easy to compare diffrent models and exp to find the best performing one
+3.Collaboration
+Allow team members to share and review each others work enhancing teamwork
+4.Efficiency
+Saves time by avoiding repeated work and helps i quickly findinh the best mdoels and settings
+5.)Auditability
+Keeps a history of all exp,useful for tracking progress and compillance purposes
+
+
+1.)Experiimentation tracking
+2.)Model Logging / Registry
+  Parameters       requirements.txt
+  metrics          conda 
+  loss
+  save 
