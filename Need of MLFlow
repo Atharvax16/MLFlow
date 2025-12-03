@@ -32,8 +32,16 @@ Keeps a history of all exp,useful for tracking progress and compillance purposes
 
 
 1.)Experiimentation tracking
-2.)Model Logging / Registry
+2.)Model Logging / Registry  --> to see which is better than the other
   Parameters       requirements.txt
   metrics          conda 
   loss
   save 
+
+for packaging we use DOCKER integrated in MLFlow
+3.)Model Evaluation --> Regression,classification (model.evaluate) will give the metrics insisde the 
+MLFlow UI for example:Confusion)mat,AUC-ROC
+4.)Model Deployment --> throug registry --> best models
+5.)Hyperparameter tuning --> Multiple experiemnets right? so it track that and locks the best parameter values
+     Manual    GridSearch    Hyperopt(vision optimization)
+
