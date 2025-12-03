@@ -1,0 +1,16 @@
+1.End - to - End ML lifecycle management
+-->MLFlow covers the entire ML lifecycle from experimentation to deployment and monitoring in one platform
+2.Modular Design:
+-Tracking --> Logs and queries experirments including code,data,configuration and results.
+-Project --> Standardizes the way to package and share ML code.
+-Models --> Manages model package and deployment across various environments.
+-Registry --> fcailiattes model versioning,staging and deployment.
+3.Flexible deployment options --> supports multiple deployment targets including REST APIS,cloud services and 
+on-premise systems.
+4.Interoperability --> Works well with various ML libraries and tools such as Tensorflow,pytorch,scikit-learn,XGBoost
+5.Open-source
+6.Model registry --> if i sabve the model name like aharva then it will save it atharva1,atharva 2,etc
+7.Build in experiement comaprison --> easy comaprison
+8.Seamless Integration--> integrates CI/CD pipeline,supoorts GIT,CI/CD like jenkins,Github Actions
+9.User-friendly
+10.Scalability
