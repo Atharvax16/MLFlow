@@ -10,3 +10,6 @@ Often it is easiest to preprocess data before applying scikit-learn methods
 What columntransformer does is --> helps performing doffrent transformation for different columns of the data within a Pipeline that is safe from data leakage and that can be parametrized.
 
 It works on arrays,sparse amtrices and pandas dataframe
+
+
+<img width="1919" height="970" alt="image" src="https://github.com/user-attachments/assets/3f7211e5-51bf-4af5-a4b4-a39c6cbe4037" />
