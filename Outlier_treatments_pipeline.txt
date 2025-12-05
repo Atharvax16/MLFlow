@@ -1,0 +1,21 @@
+Outlier Treatment
+-->1.)Winsorizer
+in that there are capping methods
+1.Gaussian(mean-sigma) capping
+-->It assumes the feature is roughly normal
+   Sets limit at mean +- k(sigma) anything beyond is capped to those limits
+   Good when the distribution is symmetric/bell-shaped after possible transfroms
+
+2.IQR(interquartile range) capping
+-->Uses quartiles and IQR = Q3 - Q1
+   Typical limits:
+	Lower: Q1 -1.5* IQR
+	Upper: Q3 + 1.5*IQR
+3.Quantile/percentile capping
+-->Directly uses percentiles e.g cap everything below the 1st percentile to the 1st percentile value and everything above the 99th to the 99th value
+
+4.MAD(Median Absolute Deviation) based capping
+-->Compute median m and MAD = median(|xi - m|)
+sets limits at m +- k * MAD
+very robust to heavy tails and extreme outliers because it uses medians.
+
