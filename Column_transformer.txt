@@ -1,0 +1,39 @@
+set_config(transform_output = 'pandas') --> What it does is it changes global setting so that transformer and pipelines return pandas dataframe instead of numpy arrays when you call transform/fit_transform.
+because most preprocessing steps(standardScaler,columnsTransformer.Pipeline)
+outputs a numpy ndarray with no columns names
+
+ColumnsTransformer is a sklearn object that lets you apply diff preprocessing pipelines to different columns of a dataset in one shot then concatenate the results into a single feature matrix.
+ColumnTrnasformer(name,transfomer,columns) tuples.
+
+CountFrequencyEncoder --> categorical encoder that replaces each category with how often it appears I the training data,instead of using one-hotencoder or arbitrary integers.
+SimpleImputer(strategy='most_frequent')
+
+Fills missing values in embarked with the most common port (probably 'S').
+
+CountFrequencyEncoder(encoding_method='count')
+
+Looks at the embarked column in the training set.
+
+Counts how many rows fall into each category, e.g. (numbers just as an illustration):
+
+S → 500 passengers
+
+C → 150 passengers
+
+Q → 100 passengers
+
+Replaces the string in each row with that count:
+
+Every S becomes 500, every C becomes 150, every Q becomes 100.
+
+So a single numeric column results, where the value encodes how common that category is in the training data.
+
+If you had used encoding_method='frequency', then S, C, Q would be replaced by proportions like 0.7, 0.2, 0.1 instead of raw counts.
+
+MinMaxScaler()
+
+
+.get_params() --> get you the parameters you used for all the pipelines
+
+
+Scales those count values into a range so that this feature is on a similar scale to others
